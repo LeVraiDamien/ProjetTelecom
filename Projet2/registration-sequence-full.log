@@ -1,0 +1,258 @@
+time="2026-10-02T15:42:31+02:00" level=warning msg="/home/dguffon/openverso-images/docs/open5gs-and-ueransim/ngc.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+amf-1  | [32m10/02 13:42:44.077[0m: [[33mamf[0m] [1;32mINFO[0m: InitialUEMessage (../src/amf/ngap-handler.c:437)
+amf-1  | [32m10/02 13:42:44.077[0m: [[33mamf[0m] [1;32mINFO[0m: [Added] Number of gNB-UEs is now 4 (../src/amf/context.c:2785)
+amf-1  | [32m10/02 13:42:44.077[0m: [[33mamf[0m] [1;32mINFO[0m:     RAN_UE_NGAP_ID[19] AMF_UE_NGAP_ID[19] TAC[1] CellID[0x100] (../src/amf/ngap-handler.c:598)
+amf-1  | [32m10/02 13:42:44.077[0m: [[33mamf[0m] [1;32mINFO[0m: [suci-0-999-70-0000-0-0-0000000003] known UE by SUCI (../src/amf/context.c:1900)
+amf-1  | [32m10/02 13:42:44.078[0m: [[33mamf[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000003] Holding NG Context (../src/amf/amf-sm.c:1037)
+amf-1  | [32m10/02 13:42:44.078[0m: [[33mamf[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000003]    RAN_UE_NGAP_ID[16] AMF_UE_NGAP_ID[16] (../src/amf/amf-sm.c:1037)
+amf-1  | [32m10/02 13:42:44.078[0m: [[33mgmm[0m] [1;32mINFO[0m: Registration request (../src/amf/gmm-sm.c:1323)
+amf-1  | [32m10/02 13:42:44.078[0m: [[33mgmm[0m] [1;32mINFO[0m: [suci-0-999-70-0000-0-0-0000000003]    SUCI (../src/amf/gmm-handler.c:174)
+upf-1  | [32m10/02 13:42:44.081[0m: [[33mupf[0m] [1;32mINFO[0m: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:253)
+smf-1  | [32m10/02 13:42:44.082[0m: [[33msmf[0m] [1;32mINFO[0m: Removed Session: UE IMSI:[imsi-999700000000003] DNN:[internet:1] IPv4:[10.45.0.17] IPv6:[] (../src/smf/context.c:1693)
+smf-1  | [32m10/02 13:42:44.082[0m: [[33msmf[0m] [1;32mINFO[0m: [Removed] Number of SMF-Sessions is now 2 (../src/smf/context.c:3198)
+smf-1  | [32m10/02 13:42:44.082[0m: [[33msmf[0m] [1;32mINFO[0m: [Removed] Number of SMF-UEs is now 2 (../src/smf/context.c:1094)
+amf-1  | [32m10/02 13:42:44.083[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000003:1] Release SM context [204] (../src/amf/amf-sm.c:553)
+amf-1  | [32m10/02 13:42:44.083[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000003:1] Release SM Context [state:31] (../src/amf/nsmf-handler.c:1163)
+amf-1  | [32m10/02 13:42:44.083[0m: [[33mamf[0m] [1;32mINFO[0m: [Removed] Number of AMF-Sessions is now 2 (../src/amf/context.c:2813)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.11:7777] (../src/amf/nausf-handler.c:130)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.11:7777] (../src/amf/nausf-handler.c:130)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: InitialUEMessage (../src/amf/ngap-handler.c:437)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: [Added] Number of gNB-UEs is now 5 (../src/amf/context.c:2785)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m:     RAN_UE_NGAP_ID[20] AMF_UE_NGAP_ID[20] TAC[1] CellID[0x100] (../src/amf/ngap-handler.c:598)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: [suci-0-999-70-0000-0-0-0000000001] known UE by SUCI (../src/amf/context.c:1900)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000001] Holding NG Context (../src/amf/amf-sm.c:1037)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000001]    RAN_UE_NGAP_ID[17] AMF_UE_NGAP_ID[17] (../src/amf/amf-sm.c:1037)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mgmm[0m] [1;32mINFO[0m: Registration request (../src/amf/gmm-sm.c:1323)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mgmm[0m] [1;32mINFO[0m: [suci-0-999-70-0000-0-0-0000000001]    SUCI (../src/amf/gmm-handler.c:174)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: InitialUEMessage (../src/amf/ngap-handler.c:437)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: [Added] Number of gNB-UEs is now 6 (../src/amf/context.c:2785)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m:     RAN_UE_NGAP_ID[21] AMF_UE_NGAP_ID[21] TAC[1] CellID[0x100] (../src/amf/ngap-handler.c:598)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;32mINFO[0m: [suci-0-999-70-0000-0-0-0000000002] known UE by SUCI (../src/amf/context.c:1900)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000002] Holding NG Context (../src/amf/amf-sm.c:1037)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mamf[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000002]    RAN_UE_NGAP_ID[18] AMF_UE_NGAP_ID[18] (../src/amf/amf-sm.c:1037)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mgmm[0m] [1;32mINFO[0m: Registration request (../src/amf/gmm-sm.c:1323)
+amf-1  | [32m10/02 13:42:44.086[0m: [[33mgmm[0m] [1;32mINFO[0m: [suci-0-999-70-0000-0-0-0000000002]    SUCI (../src/amf/gmm-handler.c:174)
+upf-1  | [32m10/02 13:42:44.088[0m: [[33mupf[0m] [1;32mINFO[0m: [Removed] Number of UPF-sessions is now 1 (../src/upf/context.c:253)
+upf-1  | [32m10/02 13:42:44.088[0m: [[33mupf[0m] [1;32mINFO[0m: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:253)
+smf-1  | [32m10/02 13:42:44.090[0m: [[33msmf[0m] [1;32mINFO[0m: Removed Session: UE IMSI:[imsi-999700000000001] DNN:[internet:1] IPv4:[10.45.0.19] IPv6:[] (../src/smf/context.c:1693)
+smf-1  | [32m10/02 13:42:44.090[0m: [[33msmf[0m] [1;32mINFO[0m: [Removed] Number of SMF-Sessions is now 1 (../src/smf/context.c:3198)
+smf-1  | [32m10/02 13:42:44.090[0m: [[33msmf[0m] [1;32mINFO[0m: [Removed] Number of SMF-UEs is now 1 (../src/smf/context.c:1094)
+smf-1  | [32m10/02 13:42:44.090[0m: [[33msmf[0m] [1;32mINFO[0m: Removed Session: UE IMSI:[imsi-999700000000002] DNN:[internet:1] IPv4:[10.45.0.18] IPv6:[] (../src/smf/context.c:1693)
+smf-1  | [32m10/02 13:42:44.090[0m: [[33msmf[0m] [1;32mINFO[0m: [Removed] Number of SMF-Sessions is now 0 (../src/smf/context.c:3198)
+smf-1  | [32m10/02 13:42:44.090[0m: [[33msmf[0m] [1;32mINFO[0m: [Removed] Number of SMF-UEs is now 0 (../src/smf/context.c:1094)
+amf-1  | [32m10/02 13:42:44.090[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000002:1] Release SM context [204] (../src/amf/amf-sm.c:553)
+amf-1  | [32m10/02 13:42:44.090[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000002:1] Release SM Context [state:31] (../src/amf/nsmf-handler.c:1163)
+amf-1  | [32m10/02 13:42:44.090[0m: [[33mamf[0m] [1;32mINFO[0m: [Removed] Number of AMF-Sessions is now 1 (../src/amf/context.c:2813)
+amf-1  | [32m10/02 13:42:44.090[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000001:1] Release SM context [204] (../src/amf/amf-sm.c:553)
+amf-1  | [32m10/02 13:42:44.091[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000001:1] Release SM Context [state:31] (../src/amf/nsmf-handler.c:1163)
+amf-1  | [32m10/02 13:42:44.091[0m: [[33mamf[0m] [1;32mINFO[0m: [Removed] Number of AMF-Sessions is now 0 (../src/amf/context.c:2813)
+amf-1  | [32m10/02 13:42:44.092[0m: [[33mamf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.11:7777] (../src/amf/nausf-handler.c:130)
+amf-1  | [32m10/02 13:42:44.092[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.11:7777] (../src/amf/nausf-handler.c:130)
+amf-1  | [32m10/02 13:42:44.093[0m: [[33mamf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.11:7777] (../src/amf/nausf-handler.c:130)
+amf-1  | [32m10/02 13:42:44.093[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.11:7777] (../src/amf/nausf-handler.c:130)
+ausf-1  | [32m10/02 13:42:44.095[0m: [[33mausf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.12:7777] (../src/ausf/nudm-handler.c:337)
+ausf-1  | [32m10/02 13:42:44.095[0m: [[33mausf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.12:7777] (../src/ausf/nudm-handler.c:337)
+ausf-1  | [32m10/02 13:42:44.095[0m: [[33mausf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.12:7777] (../src/ausf/nudm-handler.c:337)
+ausf-1  | [32m10/02 13:42:44.095[0m: [[33mausf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.12:7777] (../src/ausf/nudm-handler.c:337)
+amf-1   | [32m10/02 13:42:44.096[0m: [[33mgmm[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000003] Clear NG Context (../src/amf/gmm-sm.c:2145)
+amf-1   | [32m10/02 13:42:44.096[0m: [[33mgmm[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000003]    RAN_UE_NGAP_ID[16] AMF_UE_NGAP_ID[16] (../src/amf/gmm-sm.c:2145)
+amf-1   | [32m10/02 13:42:44.096[0m: [[33mamf[0m] [1;32mINFO[0m: UE Context Release [Action:1] (../src/amf/ngap-handler.c:1733)
+amf-1   | [32m10/02 13:42:44.096[0m: [[33mamf[0m] [1;32mINFO[0m:     RAN_UE_NGAP_ID[16] AMF_UE_NGAP_ID[16] (../src/amf/ngap-handler.c:1734)
+amf-1   | [32m10/02 13:42:44.096[0m: [[33mamf[0m] [1;32mINFO[0m: [Removed] Number of gNB-UEs is now 5 (../src/amf/context.c:2792)
+ausf-1  | [32m10/02 13:42:44.097[0m: [[33mausf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.12:7777] (../src/ausf/nudm-handler.c:337)
+ausf-1  | [32m10/02 13:42:44.097[0m: [[33mausf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.12:7777] (../src/ausf/nudm-handler.c:337)
+amf-1   | [32m10/02 13:42:44.097[0m: [[33mgmm[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000002] Clear NG Context (../src/amf/gmm-sm.c:2145)
+amf-1   | [32m10/02 13:42:44.097[0m: [[33mgmm[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000002]    RAN_UE_NGAP_ID[18] AMF_UE_NGAP_ID[18] (../src/amf/gmm-sm.c:2145)
+amf-1   | [32m10/02 13:42:44.098[0m: [[33mamf[0m] [1;32mINFO[0m: UE Context Release [Action:1] (../src/amf/ngap-handler.c:1733)
+amf-1   | [32m10/02 13:42:44.098[0m: [[33mamf[0m] [1;32mINFO[0m:     RAN_UE_NGAP_ID[18] AMF_UE_NGAP_ID[18] (../src/amf/ngap-handler.c:1734)
+amf-1   | [32m10/02 13:42:44.098[0m: [[33mamf[0m] [1;32mINFO[0m: [Removed] Number of gNB-UEs is now 4 (../src/amf/context.c:2792)
+amf-1   | [32m10/02 13:42:44.102[0m: [[33mamf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.7:7777] (../src/amf/npcf-handler.c:143)
+amf-1   | [32m10/02 13:42:44.102[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.7:7777] (../src/amf/npcf-handler.c:143)
+amf-1   | [32m10/02 13:42:44.102[0m: [[33mgmm[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000001] Clear NG Context (../src/amf/gmm-sm.c:2145)
+amf-1   | [32m10/02 13:42:44.102[0m: [[33mgmm[0m] [1;36mWARNING[0m: [suci-0-999-70-0000-0-0-0000000001]    RAN_UE_NGAP_ID[17] AMF_UE_NGAP_ID[17] (../src/amf/gmm-sm.c:2145)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.7:7777] (../src/amf/npcf-handler.c:143)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.7:7777] (../src/amf/npcf-handler.c:143)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m: UE Context Release [Action:1] (../src/amf/ngap-handler.c:1733)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m:     RAN_UE_NGAP_ID[17] AMF_UE_NGAP_ID[17] (../src/amf/ngap-handler.c:1734)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m: [Removed] Number of gNB-UEs is now 3 (../src/amf/context.c:2792)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mgmm[0m] [1;32mINFO[0m: [imsi-999700000000003] Registration complete (../src/amf/gmm-sm.c:2658)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000003] Configuration update command (../src/amf/nas-path.c:607)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mgmm[0m] [1;32mINFO[0m:     UTC [2026-10-02T13:42:44] Timezone[0]/DST[0] (../src/amf/gmm-build.c:551)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mgmm[0m] [1;32mINFO[0m:     LOCAL [2026-10-02T13:42:44] Timezone[0]/DST[0] (../src/amf/gmm-build.c:556)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2806)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mgmm[0m] [1;32mINFO[0m: UE SUPI[imsi-999700000000003] DNN[internet] S_NSSAI[SST:1 SD:0xffffff] smContextRef[NULL] smContextResourceURI[NULL] (../src/amf/gmm-handler.c:1374)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mamf[0m] [1;32mINFO[0m: [789d7802-be4a-41f1-b81e-495563ef2106] Setup NF Instance [type:SMF] (../src/amf/context.c:2429)
+amf-1   | [32m10/02 13:42:44.104[0m: [[33mgmm[0m] [1;32mINFO[0m: SMF Instance [789d7802-be4a-41f1-b81e-495563ef2106] (../src/amf/gmm-handler.c:1415)
+smf-1   | [32m10/02 13:42:44.106[0m: [[33msmf[0m] [1;32mINFO[0m: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1033)
+smf-1   | [32m10/02 13:42:44.106[0m: [[33msmf[0m] [1;32mINFO[0m: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3190)
+smf-1   | [32m10/02 13:42:44.106[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.5:7777] (../src/smf/nsmf-handler.c:270)
+smf-1   | [32m10/02 13:42:44.106[0m: [[33msbi[0m] [1;32mINFO[0m: [78900334-be4a-41f1-aaba-8f47ea89dfd8] Setup NF Instance [type:UDM] (../lib/sbi/path.c:307)
+smf-1   | [32m10/02 13:42:44.108[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.12:7777] (../src/smf/nudm-handler.c:461)
+smf-1   | [32m10/02 13:42:44.109[0m: [[33msbi[0m] [1;32mINFO[0m: [b7871dd8-be64-41f1-8dc2-b3a7d4a13f6f] Setup NF Instance [type:PCF] (../lib/sbi/path.c:307)
+amf-1   | [32m10/02 13:42:44.109[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.13:7777] (../src/amf/nsmf-handler.c:144)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mamf[0m] [1;36mWARNING[0m: UnRef NF EndPoint(addr) [172.18.0.7:7777] (../src/amf/npcf-handler.c:143)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.7:7777] (../src/amf/npcf-handler.c:143)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mgmm[0m] [1;32mINFO[0m: [imsi-999700000000002] Registration complete (../src/amf/gmm-sm.c:2658)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000002] Configuration update command (../src/amf/nas-path.c:607)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mgmm[0m] [1;32mINFO[0m:     UTC [2026-10-02T13:42:44] Timezone[0]/DST[0] (../src/amf/gmm-build.c:551)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mgmm[0m] [1;32mINFO[0m:     LOCAL [2026-10-02T13:42:44] Timezone[0]/DST[0] (../src/amf/gmm-build.c:556)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mamf[0m] [1;32mINFO[0m: [Added] Number of AMF-Sessions is now 2 (../src/amf/context.c:2806)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mgmm[0m] [1;32mINFO[0m: UE SUPI[imsi-999700000000002] DNN[internet] S_NSSAI[SST:1 SD:0xffffff] smContextRef[NULL] smContextResourceURI[NULL] (../src/amf/gmm-handler.c:1374)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mamf[0m] [1;32mINFO[0m: [789d7802-be4a-41f1-b81e-495563ef2106] Setup NF Instance [type:SMF] (../src/amf/context.c:2429)
+amf-1   | [32m10/02 13:42:44.111[0m: [[33mgmm[0m] [1;32mINFO[0m: SMF Instance [789d7802-be4a-41f1-b81e-495563ef2106] (../src/amf/gmm-handler.c:1415)
+smf-1   | [32m10/02 13:42:44.112[0m: [[33msmf[0m] [1;32mINFO[0m: [Added] Number of SMF-UEs is now 2 (../src/smf/context.c:1033)
+smf-1   | [32m10/02 13:42:44.112[0m: [[33msmf[0m] [1;32mINFO[0m: [Added] Number of SMF-Sessions is now 2 (../src/smf/context.c:3190)
+smf-1   | [32m10/02 13:42:44.112[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.5:7777] (../src/smf/nsmf-handler.c:270)
+smf-1   | [32m10/02 13:42:44.112[0m: [[33msbi[0m] [1;32mINFO[0m: [78900334-be4a-41f1-aaba-8f47ea89dfd8] Setup NF Instance [type:UDM] (../lib/sbi/path.c:307)
+smf-1   | [32m10/02 13:42:44.112[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.7:7777] (../src/smf/npcf-handler.c:367)
+smf-1   | [32m10/02 13:42:44.112[0m: [[33msmf[0m] [1;32mINFO[0m: UE SUPI[imsi-999700000000003] DNN[internet] IPv4[10.45.0.20] IPv6[] (../src/smf/npcf-handler.c:580)
+upf-1   | [32m10/02 13:42:44.112[0m: [[33mupf[0m] [1;32mINFO[0m: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:209)
+upf-1   | [32m10/02 13:42:44.112[0m: [[33mupf[0m] [1;32mINFO[0m: UE F-SEID[UP:0x99e CP:0xafd] APN[internet] PDN-Type[1] IPv4[10.45.0.20] IPv6[] (../src/upf/context.c:495)
+smf-1   | [32m10/02 13:42:44.113[0m: [[33msbi[0m] [1;32mINFO[0m: [78795346-be4a-41f1-8c32-97a4b2d41dfb] Setup NF Instance [type:AMF] (../lib/sbi/path.c:307)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mgmm[0m] [1;32mINFO[0m: [imsi-999700000000001] Registration complete (../src/amf/gmm-sm.c:2658)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000001] Configuration update command (../src/amf/nas-path.c:607)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mgmm[0m] [1;32mINFO[0m:     UTC [2026-10-02T13:42:44] Timezone[0]/DST[0] (../src/amf/gmm-build.c:551)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mgmm[0m] [1;32mINFO[0m:     LOCAL [2026-10-02T13:42:44] Timezone[0]/DST[0] (../src/amf/gmm-build.c:556)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mamf[0m] [1;32mINFO[0m: [Added] Number of AMF-Sessions is now 3 (../src/amf/context.c:2806)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mgmm[0m] [1;32mINFO[0m: UE SUPI[imsi-999700000000001] DNN[internet] S_NSSAI[SST:1 SD:0xffffff] smContextRef[NULL] smContextResourceURI[NULL] (../src/amf/gmm-handler.c:1374)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mamf[0m] [1;32mINFO[0m: [789d7802-be4a-41f1-b81e-495563ef2106] Setup NF Instance [type:SMF] (../src/amf/context.c:2429)
+amf-1   | [32m10/02 13:42:44.113[0m: [[33mgmm[0m] [1;32mINFO[0m: SMF Instance [789d7802-be4a-41f1-b81e-495563ef2106] (../src/amf/gmm-handler.c:1415)
+smf-1   | [32m10/02 13:42:44.114[0m: [[33msmf[0m] [1;32mINFO[0m: [Added] Number of SMF-UEs is now 3 (../src/smf/context.c:1033)
+smf-1   | [32m10/02 13:42:44.114[0m: [[33msmf[0m] [1;32mINFO[0m: [Added] Number of SMF-Sessions is now 3 (../src/smf/context.c:3190)
+smf-1   | [32m10/02 13:42:44.114[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.5:7777] (../src/smf/nsmf-handler.c:270)
+smf-1   | [32m10/02 13:42:44.114[0m: [[33msbi[0m] [1;32mINFO[0m: [78900334-be4a-41f1-aaba-8f47ea89dfd8] Setup NF Instance [type:UDM] (../lib/sbi/path.c:307)
+smf-1   | [32m10/02 13:42:44.115[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.12:7777] (../src/smf/nudm-handler.c:461)
+smf-1   | [32m10/02 13:42:44.115[0m: [[33msbi[0m] [1;32mINFO[0m: [b7871dd8-be64-41f1-8dc2-b3a7d4a13f6f] Setup NF Instance [type:PCF] (../lib/sbi/path.c:307)
+smf-1   | [32m10/02 13:42:44.115[0m: [[33msbi[0m] [1;32mINFO[0m: [78900334-be4a-41f1-aaba-8f47ea89dfd8] Setup NF Instance [type:UDM] (../lib/sbi/path.c:307)
+amf-1   | [32m10/02 13:42:44.116[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.13:7777] (../src/amf/nsmf-handler.c:144)
+smf-1   | [32m10/02 13:42:44.116[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.12:7777] (../src/smf/nudm-handler.c:461)
+smf-1   | [32m10/02 13:42:44.116[0m: [[33msbi[0m] [1;32mINFO[0m: [b7871dd8-be64-41f1-8dc2-b3a7d4a13f6f] Setup NF Instance [type:PCF] (../lib/sbi/path.c:307)
+amf-1   | [32m10/02 13:42:44.117[0m: [[33mamf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.13:7777] (../src/amf/nsmf-handler.c:144)
+amf-1   | [32m10/02 13:42:44.117[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000003:1:11][0:0:NULL] /nsmf-pdusession/v1/sm-contexts/{smContextRef}/modify (../src/amf/nsmf-handler.c:942)
+smf-1   | [32m10/02 13:42:44.118[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.7:7777] (../src/smf/npcf-handler.c:367)
+smf-1   | [32m10/02 13:42:44.118[0m: [[33msmf[0m] [1;32mINFO[0m: UE SUPI[imsi-999700000000002] DNN[internet] IPv4[10.45.0.21] IPv6[] (../src/smf/npcf-handler.c:580)
+upf-1   | [32m10/02 13:42:44.118[0m: [[33mupf[0m] [1;32mINFO[0m: [Added] Number of UPF-Sessions is now 2 (../src/upf/context.c:209)
+upf-1   | [32m10/02 13:42:44.118[0m: [[33mupf[0m] [1;32mINFO[0m: UE F-SEID[UP:0xd15 CP:0xead] APN[internet] PDN-Type[1] IPv4[10.45.0.21] IPv6[] (../src/upf/context.c:495)
+smf-1   | [32m10/02 13:42:44.119[0m: [[33msbi[0m] [1;32mINFO[0m: [78795346-be4a-41f1-8c32-97a4b2d41dfb] Setup NF Instance [type:AMF] (../lib/sbi/path.c:307)
+smf-1   | [32m10/02 13:42:44.119[0m: [[33msmf[0m] [1;32mINFO[0m: Setup NF EndPoint(addr) [172.18.0.7:7777] (../src/smf/npcf-handler.c:367)
+smf-1   | [32m10/02 13:42:44.119[0m: [[33msmf[0m] [1;32mINFO[0m: UE SUPI[imsi-999700000000001] DNN[internet] IPv4[10.45.0.22] IPv6[] (../src/smf/npcf-handler.c:580)
+upf-1   | [32m10/02 13:42:44.119[0m: [[33mupf[0m] [1;32mINFO[0m: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:209)
+upf-1   | [32m10/02 13:42:44.119[0m: [[33mupf[0m] [1;32mINFO[0m: UE F-SEID[UP:0x3b CP:0x6c7] APN[internet] PDN-Type[1] IPv4[10.45.0.22] IPv6[] (../src/upf/context.c:495)
+smf-1   | [32m10/02 13:42:44.119[0m: [[33msbi[0m] [1;32mINFO[0m: [78795346-be4a-41f1-8c32-97a4b2d41dfb] Setup NF Instance [type:AMF] (../lib/sbi/path.c:307)
+smf-1   | [32m10/02 13:42:44.121[0m: [[33msbi[0m] [1;32mINFO[0m: [78900334-be4a-41f1-aaba-8f47ea89dfd8] Setup NF Instance [type:UDM] (../lib/sbi/path.c:307)
+amf-1   | [32m10/02 13:42:44.122[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000002:1:11][0:0:NULL] /nsmf-pdusession/v1/sm-contexts/{smContextRef}/modify (../src/amf/nsmf-handler.c:942)
+smf-1   | [32m10/02 13:42:44.325[0m: [[33msbi[0m] [1;32mINFO[0m: [78900334-be4a-41f1-aaba-8f47ea89dfd8] Setup NF Instance [type:UDM] (../lib/sbi/path.c:307)
+amf-1   | [32m10/02 13:42:44.330[0m: [[33mamf[0m] [1;32mINFO[0m: [imsi-999700000000001:1:11][0:0:NULL] /nsmf-pdusession/v1/sm-contexts/{smContextRef}/modify (../src/amf/nsmf-handler.c:942)
+
+time="2026-10-02T15:42:31+02:00" level=warning msg="/home/dguffon/openverso-images/docs/open5gs-and-ueransim/gnb1.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ues1-1  | Deleting ue: nr-ue -c ue.yaml
+[Kues1-1 exited with code 137 (restarting)
+ues1-1  | GNB_IP: 172.18.0.15
+ues1-1  | Launching ue: nr-ue -c ue.yaml
+ues1-1  | UERANSIM v3.2.6
+ues1-1  | [2026-10-02 13:42:44.074] [999700000000003|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ues1-1  | [2026-10-02 13:42:44.074] [999700000000002|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ues1-1  | [2026-10-02 13:42:44.074] [999700000000003|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ues1-1  | [2026-10-02 13:42:44.074] [999700000000001|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnb1    | [2026-10-02 13:42:44.074] [rrc] [debug] UE[19] new signal detected
+gnb1    | [2026-10-02 13:42:44.075] [rrc] [debug] UE[20] new signal detected
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000002|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000001|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnb1    | [2026-10-02 13:42:44.075] [rrc] [debug] UE[21] new signal detected
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [info] Selected plmn[999/70]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|rrc] [info] Selected cell plmn[999/70] tac[1] category[SUITABLE]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000001|nas] [info] Selected plmn[999/70]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000001|rrc] [info] Selected cell plmn[999/70] tac[1] category[SUITABLE]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [debug] Sending Initial Registration
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000001|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000003|rrc] [debug] Sending RRC Setup Request
+ues1-1  | [2026-10-02 13:42:44.075] [999700000000002|nas] [info] Selected plmn[999/70]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000001|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000001|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|rrc] [info] Selected cell plmn[999/70] tac[1] category[SUITABLE]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000001|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000001|nas] [debug] Sending Initial Registration
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000001|rrc] [debug] Sending RRC Setup Request
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000001|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|nas] [debug] Sending Initial Registration
+gnb1    | [2026-10-02 13:42:44.076] [rrc] [info] RRC Setup for UE[19]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000002|rrc] [debug] Sending RRC Setup Request
+gnb1    | [2026-10-02 13:42:44.076] [rrc] [info] RRC Setup for UE[21]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000003|rrc] [info] RRC connection established
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000003|rrc] [info] UE switches to state [RRC-CONNECTED]
+gnb1    | [2026-10-02 13:42:44.076] [rrc] [info] RRC Setup for UE[20]
+gnb1    | [2026-10-02 13:42:44.077] [ngap] [debug] Initial NAS message received from UE[19]
+ues1-1  | [2026-10-02 13:42:44.076] [999700000000003|nas] [info] UE switches to state [CM-CONNECTED]
+ues1-1  | [2026-10-02 13:42:44.077] [999700000000002|rrc] [info] RRC connection established
+ues1-1  | [2026-10-02 13:42:44.077] [999700000000002|rrc] [info] UE switches to state [RRC-CONNECTED]
+ues1-1  | [2026-10-02 13:42:44.077] [999700000000002|nas] [info] UE switches to state [CM-CONNECTED]
+ues1-1  | [2026-10-02 13:42:44.077] [999700000000001|rrc] [info] RRC connection established
+ues1-1  | [2026-10-02 13:42:44.077] [999700000000001|rrc] [info] UE switches to state [RRC-CONNECTED]
+ues1-1  | [2026-10-02 13:42:44.077] [999700000000001|nas] [info] UE switches to state [CM-CONNECTED]
+gnb1    | [2026-10-02 13:42:44.077] [ngap] [debug] Initial NAS message received from UE[21]
+gnb1    | [2026-10-02 13:42:44.077] [ngap] [debug] Initial NAS message received from UE[20]
+ues1-1  | [2026-10-02 13:42:44.086] [999700000000003|nas] [debug] Authentication Request received
+ues1-1  | [2026-10-02 13:42:44.093] [999700000000002|nas] [debug] Authentication Request received
+ues1-1  | [2026-10-02 13:42:44.093] [999700000000001|nas] [debug] Authentication Request received
+ues1-1  | [2026-10-02 13:42:44.095] [999700000000003|nas] [debug] Security Mode Command received
+ues1-1  | [2026-10-02 13:42:44.095] [999700000000003|nas] [debug] Selected integrity[2] ciphering[0]
+ues1-1  | [2026-10-02 13:42:44.096] [999700000000002|nas] [debug] Security Mode Command received
+ues1-1  | [2026-10-02 13:42:44.096] [999700000000002|nas] [debug] Selected integrity[2] ciphering[0]
+gnb1    | [2026-10-02 13:42:44.096] [ngap] [debug] UE Context Release Command received
+gnb1    | [2026-10-02 13:42:44.096] [rrc] [info] Releasing RRC connection for UE[17]
+ues1-1  | [2026-10-02 13:42:44.098] [999700000000001|nas] [debug] Security Mode Command received
+ues1-1  | [2026-10-02 13:42:44.098] [999700000000001|nas] [debug] Selected integrity[2] ciphering[0]
+gnb1    | [2026-10-02 13:42:44.098] [ngap] [debug] UE Context Release Command received
+gnb1    | [2026-10-02 13:42:44.098] [rrc] [info] Releasing RRC connection for UE[16]
+gnb1    | [2026-10-02 13:42:44.102] [ngap] [debug] Initial Context Setup Request received
+gnb1    | [2026-10-02 13:42:44.103] [ngap] [debug] UE Context Release Command received
+gnb1    | [2026-10-02 13:42:44.103] [rrc] [info] Releasing RRC connection for UE[18]
+ues1-1  | [2026-10-02 13:42:44.103] [999700000000003|nas] [debug] Registration accept received
+ues1-1  | [2026-10-02 13:42:44.103] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.103] [999700000000003|nas] [debug] Sending Registration Complete
+ues1-1  | [2026-10-02 13:42:44.103] [999700000000003|nas] [info] Initial Registration is successful
+ues1-1  | [2026-10-02 13:42:44.103] [999700000000003|nas] [debug] Sending PDU Session Establishment Request
+ues1-1  | [2026-10-02 13:42:44.103] [999700000000003|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnb1    | [2026-10-02 13:42:44.104] [ngap] [debug] Initial Context Setup Request received
+ues1-1  | [2026-10-02 13:42:44.104] [999700000000002|nas] [debug] Registration accept received
+ues1-1  | [2026-10-02 13:42:44.104] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.104] [999700000000002|nas] [debug] Sending Registration Complete
+ues1-1  | [2026-10-02 13:42:44.104] [999700000000002|nas] [info] Initial Registration is successful
+ues1-1  | [2026-10-02 13:42:44.104] [999700000000002|nas] [debug] Sending PDU Session Establishment Request
+ues1-1  | [2026-10-02 13:42:44.105] [999700000000002|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ues1-1  | [2026-10-02 13:42:44.105] [999700000000003|nas] [debug] Configuration Update Command received
+gnb1    | [2026-10-02 13:42:44.111] [ngap] [debug] Initial Context Setup Request received
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000001|nas] [debug] Registration accept received
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000001|nas] [debug] Sending Registration Complete
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000001|nas] [info] Initial Registration is successful
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000001|nas] [debug] Sending PDU Session Establishment Request
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000001|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ues1-1  | [2026-10-02 13:42:44.112] [999700000000002|nas] [debug] Configuration Update Command received
+gnb1    | [2026-10-02 13:42:44.114] [ngap] [info] PDU session resource(s) setup for UE[19] count[1]
+ues1-1  | [2026-10-02 13:42:44.115] [999700000000003|nas] [debug] PDU Session Establishment Accept received
+ues1-1  | [2026-10-02 13:42:44.115] [999700000000001|nas] [debug] Configuration Update Command received
+ues1-1  | [2026-10-02 13:42:44.115] [999700000000003|nas] [info] PDU Session establishment is successful PSI[1]
+gnb1    | [2026-10-02 13:42:44.120] [ngap] [info] PDU session resource(s) setup for UE[20] count[1]
+ues1-1  | [2026-10-02 13:42:44.120] [999700000000002|nas] [debug] PDU Session Establishment Accept received
+ues1-1  | [2026-10-02 13:42:44.120] [999700000000002|nas] [info] PDU Session establishment is successful PSI[1]
+ues1-1  | [2026-10-02 13:42:44.121] [999700000000003|app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.45.0.20] is up.
+gnb1    | [2026-10-02 13:42:44.121] [ngap] [info] PDU session resource(s) setup for UE[21] count[1]
+ues1-1  | [2026-10-02 13:42:44.121] [999700000000001|nas] [debug] PDU Session Establishment Accept received
+ues1-1  | [2026-10-02 13:42:44.121] [999700000000001|nas] [info] PDU Session establishment is successful PSI[1]
+ues1-1  | [2026-10-02 13:42:44.126] [999700000000002|app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun1, 10.45.0.21] is up.
+ues1-1  | [2026-10-02 13:42:44.131] [999700000000001|app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun2, 10.45.0.22] is up.
+gnb1    | [2026-10-02 13:42:44.989] [rls] [debug] UE[16] signal lost
+gnb1    | [2026-10-02 13:42:44.989] [rls] [debug] UE[17] signal lost
+gnb1    | [2026-10-02 13:42:44.989] [rls] [debug] UE[18] signal lost
+
