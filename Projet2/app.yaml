@@ -1,0 +1,8 @@
+services:
+  nginx:
+    image: nginx
+    restart: unless-stopped
+  iperf3:
+    image: networkstatic/iperf3
+    command: ["-s"]
+    restart: unless-stopped
