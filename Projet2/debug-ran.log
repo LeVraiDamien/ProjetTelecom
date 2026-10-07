@@ -1,0 +1,82 @@
+time="2026-10-06T13:17:03+02:00" level=warning msg="/home/dguffon/openverso-images/docs/open5gs-and-ueransim/gnb1.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+gnb1  | [2026-10-06 11:09:09.178] [rls] [debug] UE[1] signal lost
+gnb1  | [2026-10-06 11:09:09.178] [rls] [debug] UE[2] signal lost
+gnb1  | [2026-10-06 11:10:10.875] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnb1  | [2026-10-06 11:11:46.578] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnb1  | [2026-10-06 11:11:46.578] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000001|rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000002|rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000001|nas] [error] Radio link failure detected
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000001|rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000001|nas] [info] UE switches to state [CM-IDLE]
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000002|rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000003|rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000002|nas] [error] Radio link failure detected
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000003|rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ues1-1  | [2026-10-06 11:09:09.178] [999700000000002|nas] [info] UE switches to state [CM-IDLE]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000003|nas] [error] Radio link failure detected
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000002|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000003|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000003|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000003|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000001|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000001|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000001|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000002|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000002|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ues1-1  | [2026-10-06 11:09:09.179] [999700000000003|nas] [info] UE switches to state [CM-IDLE]
+ues1-1  | [2026-10-06 11:09:09.180] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:09:09.180] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ues1-1  | [2026-10-06 11:09:09.180] [999700000000003|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:11.381] [999700000000001|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:11.381] [999700000000002|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:11.382] [999700000000003|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:13.583] [999700000000001|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:13.583] [999700000000002|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:13.584] [999700000000003|nas] [error] PLMN selection failure, no cells in coverage
+ues1-1  | [2026-10-06 11:09:14.684] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ues1-1  | [2026-10-06 11:09:14.684] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ues1-1  | [2026-10-06 11:09:14.685] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000001|nas] [info] Selected plmn[999/70]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000003|nas] [info] Selected plmn[999/70]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000001|rrc] [info] Selected cell plmn[999/70] tac[1] category[SUITABLE]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000002|nas] [info] Selected plmn[999/70]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000003|rrc] [info] Selected cell plmn[999/70] tac[1] category[ACCEPTABLE]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000002|rrc] [info] Selected cell plmn[999/70] tac[1] category[SUITABLE]
+ues1-1  | [2026-10-06 11:09:15.538] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:09:15.539] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:09:15.539] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ues1-1  | [2026-10-06 11:09:15.539] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-06 11:09:15.539] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-06 11:10:10.874] [999700000000001|nas] [debug] Uplink data status changed PSI[1] pending[true]
+ues1-1  | [2026-10-06 11:10:10.874] [999700000000001|nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ues1-1  | [2026-10-06 11:10:10.874] [999700000000001|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ues1-1  | [2026-10-06 11:10:10.874] [999700000000001|nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ues1-1  | [2026-10-06 11:10:10.875] [999700000000001|nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ues1-1  | [2026-10-06 11:10:10.875] [999700000000001|rrc] [debug] Sending RRC Setup Request
+ues1-1  | [2026-10-06 11:10:26.472] [999700000000001|nas] [debug] NAS timer[3517] expired [1]
+ues1-1  | [2026-10-06 11:10:26.472] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:10:26.472] [999700000000001|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000002|nas] [debug] Uplink data status changed PSI[1] pending[true]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000003|nas] [debug] Uplink data status changed PSI[1] pending[true]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000003|nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000002|nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000002|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000002|nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000003|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000003|nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000002|nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ues1-1  | [2026-10-06 11:11:46.577] [999700000000002|rrc] [debug] Sending RRC Setup Request
+ues1-1  | [2026-10-06 11:11:46.578] [999700000000003|nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ues1-1  | [2026-10-06 11:11:46.578] [999700000000003|rrc] [debug] Sending RRC Setup Request
+ues1-1  | [2026-10-06 11:12:02.477] [999700000000002|nas] [debug] NAS timer[3517] expired [1]
+ues1-1  | [2026-10-06 11:12:02.477] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:12:02.477] [999700000000002|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ues1-1  | [2026-10-06 11:12:02.479] [999700000000003|nas] [debug] NAS timer[3517] expired [1]
+ues1-1  | [2026-10-06 11:12:02.479] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/PS]
+ues1-1  | [2026-10-06 11:12:02.479] [999700000000003|nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]

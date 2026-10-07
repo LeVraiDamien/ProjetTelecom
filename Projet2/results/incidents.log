@@ -1,0 +1,6 @@
+2026-10-06T14:50:43  user plane down (delay50ms/N3 before start) -> restarting UE
+2026-10-06T14:50:54  user plane restored, new UE address 10.45.0.13
+2026-10-07T14:28:45+02:00  campaign start (timesyncd stopped)
+2026-10-07T14:28:45  user plane down (preflight/none before start) -> restarting UE
+2026-10-07T14:28:57  user plane restored, new UE address 10.45.0.3
+2026-10-07T14:45:41+02:00  campaign end (impairments cleared, timesyncd restarted)

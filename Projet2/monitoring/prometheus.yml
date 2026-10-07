@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: open5gs
+    static_configs:
+      - targets: ['amf:9090', 'smf:9090', 'upf:9090', 'pcf:9090']
+  - job_name: measurements
+    honor_labels: true
+    static_configs:
+      - targets: ['pushgateway:9091']
+  - job_name: cadvisor
+    static_configs:
+      - targets: ['cadvisor:8080']

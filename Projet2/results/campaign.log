@@ -1,0 +1,80 @@
+Previous dataset archived.
+  ! user plane down (preflight/none before start) -> restarting UE
+  ! user plane restored, new UE address 10.45.0.3
+Condition=preflight location=none UE=10.45.0.3 reps=0
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+Pre-flight without impairment: RTT = 2.586 ms
+Pre-flight N3 +50 ms: RTT = 53.179 ms
+Pre-flight N6 +50 ms: RTT = 53.504 ms
+
+===== baseline | none | UDP 10M | 14:29:01 =====
+Condition=baseline location=none UE=10.45.0.3 reps=3
+  rep 1: RTT 2.94 ms, ICMP loss 0.00 % | TCP 1056.04 Mbit/s, retr 1396 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.071 ms | HTTP 20/20 OK, mean 2.43 ms
+  rep 2: RTT 3.17 ms, ICMP loss 0.00 % | TCP 1057.13 Mbit/s, retr 1428 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.104 ms | HTTP 20/20 OK, mean 1.49 ms
+  rep 3: RTT 3.11 ms, ICMP loss 0.00 % | TCP 1056.61 Mbit/s, retr 1408 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.051 ms | HTTP 20/20 OK, mean 1.56 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== delay50ms | N3 | UDP 10M | 14:30:48 =====
+Applied on N3: netem delay 50ms
+Condition=delay50ms location=N3 UE=10.45.0.3 reps=3
+  rep 1: RTT 53.59 ms, ICMP loss 0.00 % | TCP 22.27 Mbit/s, retr 195 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.059 ms | HTTP 20/20 OK, mean 106.40 ms
+  rep 2: RTT 53.70 ms, ICMP loss 0.00 % | TCP 24.24 Mbit/s, retr 297 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.100 ms | HTTP 20/20 OK, mean 106.17 ms
+  rep 3: RTT 53.77 ms, ICMP loss 0.00 % | TCP 24.65 Mbit/s, retr 588 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.077 ms | HTTP 20/20 OK, mean 105.37 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== delay50ms | N6 | UDP 10M | 14:32:45 =====
+Applied on N6: netem delay 50ms
+Condition=delay50ms location=N6 UE=10.45.0.3 reps=3
+  rep 1: RTT 53.86 ms, ICMP loss 0.00 % | TCP 155.79 Mbit/s, retr 319 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.066 ms | HTTP 20/20 OK, mean 106.07 ms
+  rep 2: RTT 53.76 ms, ICMP loss 0.00 % | TCP 156.21 Mbit/s, retr 551 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.052 ms | HTTP 20/20 OK, mean 107.18 ms
+  rep 3: RTT 54.05 ms, ICMP loss 0.00 % | TCP 79.14 Mbit/s, retr 275 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.040 ms | HTTP 20/20 OK, mean 107.07 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== loss1pct | N3 | UDP 10M | 14:34:42 =====
+Applied on N3: netem loss 1%
+Condition=loss1pct location=N3 UE=10.45.0.3 reps=3
+  rep 1: RTT 3.02 ms, ICMP loss 0.00 % | TCP 234.10 Mbit/s, retr 2186 | UDP 10.00/10 Mbit/s, loss 0.98 %, jitter 0.035 ms | HTTP 20/20 OK, mean 52.29 ms
+  rep 2: RTT 2.20 ms, ICMP loss 0.00 % | TCP 228.74 Mbit/s, retr 2151 | UDP 10.00/10 Mbit/s, loss 0.78 %, jitter 0.045 ms | HTTP 20/20 OK, mean 12.63 ms
+  rep 3: RTT 2.68 ms, ICMP loss 0.00 % | TCP 242.90 Mbit/s, retr 2270 | UDP 10.00/10 Mbit/s, loss 1.08 %, jitter 0.073 ms | HTTP 20/20 OK, mean 1.44 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== loss1pct | N6 | UDP 10M | 14:36:32 =====
+Applied on N6: netem loss 1%
+Condition=loss1pct location=N6 UE=10.45.0.3 reps=3
+  rep 1: RTT 2.90 ms, ICMP loss 0.00 % | TCP 696.29 Mbit/s, retr 6253 | UDP 10.00/10 Mbit/s, loss 0.97 %, jitter 0.050 ms | HTTP 20/20 OK, mean 1.47 ms
+  rep 2: RTT 2.92 ms, ICMP loss 2.00 % | TCP 706.42 Mbit/s, retr 5310 | UDP 10.00/10 Mbit/s, loss 0.85 %, jitter 0.049 ms | HTTP 20/20 OK, mean 1.46 ms
+  rep 3: RTT 3.21 ms, ICMP loss 0.00 % | TCP 652.80 Mbit/s, retr 6149 | UDP 10.00/10 Mbit/s, loss 1.08 %, jitter 0.053 ms | HTTP 20/20 OK, mean 52.16 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== baseline-udp30 | none | UDP 30M | 14:38:20 =====
+Condition=baseline-udp30 location=none UE=10.45.0.3 reps=3
+  rep 1: RTT 2.27 ms, ICMP loss 0.00 % | TCP 1057.09 Mbit/s, retr 1058 | UDP 30.00/30 Mbit/s, loss 0.00 %, jitter 0.036 ms | HTTP 20/20 OK, mean 1.62 ms
+  rep 2: RTT 2.59 ms, ICMP loss 0.00 % | TCP 1056.52 Mbit/s, retr 1280 | UDP 30.00/30 Mbit/s, loss 0.00 %, jitter 0.023 ms | HTTP 20/20 OK, mean 1.58 ms
+  rep 3: RTT 2.12 ms, ICMP loss 0.00 % | TCP 1055.85 Mbit/s, retr 1300 | UDP 30.00/30 Mbit/s, loss 0.00 %, jitter 0.044 ms | HTTP 20/20 OK, mean 1.57 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== rate20mbit | N3 | UDP 30M | 14:40:07 =====
+Applied on N3: netem rate 20mbit
+Condition=rate20mbit location=N3 UE=10.45.0.3 reps=3
+  rep 1: RTT 2.91 ms, ICMP loss 0.00 % | TCP 18.49 Mbit/s, retr 0 | UDP 30.00/30 Mbit/s, loss 31.60 %, jitter 0.171 ms | HTTP 20/20 OK, mean 2.27 ms
+  rep 2: RTT 1.63 ms, ICMP loss 0.00 % | TCP 18.49 Mbit/s, retr 0 | UDP 30.00/30 Mbit/s, loss 31.60 %, jitter 0.114 ms | HTTP 20/20 OK, mean 2.47 ms
+  rep 3: RTT 2.64 ms, ICMP loss 0.00 % | TCP 18.49 Mbit/s, retr 0 | UDP 30.00/30 Mbit/s, loss 31.60 %, jitter 0.174 ms | HTTP 20/20 OK, mean 2.36 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== rate20mbit | N6 | UDP 30M | 14:42:01 =====
+Applied on N6: netem rate 20mbit
+Condition=rate20mbit location=N6 UE=10.45.0.3 reps=3
+  rep 1: RTT 2.77 ms, ICMP loss 0.00 % | TCP 19.06 Mbit/s, retr 0 | UDP 30.00/30 Mbit/s, loss 29.79 %, jitter 0.160 ms | HTTP 20/20 OK, mean 1.99 ms
+  rep 2: RTT 2.73 ms, ICMP loss 0.00 % | TCP 19.06 Mbit/s, retr 0 | UDP 30.00/30 Mbit/s, loss 29.79 %, jitter 0.151 ms | HTTP 20/20 OK, mean 2.00 ms
+  rep 3: RTT 2.44 ms, ICMP loss 0.00 % | TCP 19.06 Mbit/s, retr 0 | UDP 30.00/30 Mbit/s, loss 29.79 %, jitter 0.174 ms | HTTP 20/20 OK, mean 2.35 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+===== recovery | none | UDP 10M | 14:43:53 =====
+Condition=recovery location=none UE=10.45.0.3 reps=3
+  rep 1: RTT 2.99 ms, ICMP loss 0.00 % | TCP 1056.01 Mbit/s, retr 1179 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.061 ms | HTTP 20/20 OK, mean 1.56 ms
+  rep 2: RTT 3.05 ms, ICMP loss 0.00 % | TCP 1055.09 Mbit/s, retr 1069 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.054 ms | HTTP 20/20 OK, mean 1.63 ms
+  rep 3: RTT 2.24 ms, ICMP loss 0.00 % | TCP 1051.22 Mbit/s, retr 1045 | UDP 10.00/10 Mbit/s, loss 0.00 %, jitter 0.056 ms | HTTP 20/20 OK, mean 1.92 ms
+Results appended to /home/dguffon/ProjetTelecom/Projet2/results/dataset.csv
+
+Campaign finished at 14:45:41.
+Cleanup done: impairments cleared, time synchronisation restarted.

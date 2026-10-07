@@ -1,0 +1,424 @@
+{
+  "title": "Step 3 - 5G user-plane measurement campaign",
+  "uid": "step3-campaign",
+  "tags": [
+    "scenario-b",
+    "step3"
+  ],
+  "timezone": "utc",
+  "schemaVersion": 39,
+  "refresh": "",
+  "time": {
+    "from": "2026-10-07T12:26:00.000Z",
+    "to": "2026-10-07T12:48:00.000Z"
+  },
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Configured impairment (impair.sh)",
+      "description": "Network condition applied with tc/netem, pushed by impair.sh. 0 everywhere = no impairment.",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 6
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "impairment_delay_ms",
+          "legendFormat": "delay (ms) - {{location}}",
+          "refId": "A"
+        },
+        {
+          "expr": "impairment_loss_pct",
+          "legendFormat": "loss (%) - {{location}}",
+          "refId": "B"
+        },
+        {
+          "expr": "impairment_rate_mbit",
+          "legendFormat": "rate limit (Mbit/s) - {{location}}",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "RTT through the 5G user plane (ICMP via uesimtun0)",
+      "description": "Average of 50 pings per repetition, UE -> Nginx through the GTP-U tunnel.",
+      "gridPos": {
+        "x": 0,
+        "y": 6,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "measure_rtt_avg_ms",
+          "legendFormat": "{{condition}} / {{location}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Downlink TCP throughput (iperf3 -R)",
+      "description": "Receiver-side throughput, 10 s test per repetition. Log scale.",
+      "gridPos": {
+        "x": 12,
+        "y": 6,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "Mbits",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "scaleDistribution": {
+              "type": "log",
+              "log": 10
+            }
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "measure_tcp_mbps",
+          "legendFormat": "{{condition}} / {{location}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Packet loss",
+      "description": "UDP: receiver-side loss of the iperf3 flow (10 or 30 Mbit/s offered). ICMP: 50 pings.",
+      "gridPos": {
+        "x": 0,
+        "y": 14,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "measure_udp_loss_pct",
+          "legendFormat": "UDP - {{condition}} / {{location}}",
+          "refId": "A"
+        },
+        {
+          "expr": "measure_icmp_loss_pct",
+          "legendFormat": "ICMP - {{condition}} / {{location}}",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "TCP retransmissions",
+      "description": "Segments retransmitted by the iperf3 sender during each 10 s test.",
+      "gridPos": {
+        "x": 12,
+        "y": 14,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "measure_tcp_retransmits",
+          "legendFormat": "{{condition}} / {{location}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "HTTP response time (Nginx via uesimtun0)",
+      "description": "Mean total time of the successful requests of each repetition (20 requests).",
+      "gridPos": {
+        "x": 0,
+        "y": 22,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "measure_http_time_ms",
+          "legendFormat": "{{condition}} / {{location}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "WSL2 VM CPU usage (cAdvisor, host level)",
+      "description": "cAdvisor cannot identify individual containers in this WSL2/Docker setup (only the root cgroup is exported), so CPU is shown for the whole VM. 1.0 = one fully used core. Load is dominated by the user-space UPF and gNB.",
+      "gridPos": {
+        "x": 12,
+        "y": 22,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(container_cpu_usage_seconds_total{id=\"/\"}[30s]))",
+          "legendFormat": "CPU cores in use (whole VM)",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "UE / PDU session state (Open5GS metrics)",
+      "description": "Connected gNBs, UEs, sessions and PFCP peers as exported by AMF, SMF and UPF.",
+      "gridPos": {
+        "x": 0,
+        "y": 30,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "{__name__=~\"gnb|ran_ue|amf_session|fivegs_upffunction_upf_sessionnbr|ues_active|bearers_active|pfcp_peers_active\", job=\"open5gs\"}",
+          "legendFormat": "{{__name__}} ({{instance}})",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Registration and PDU session procedures (per minute)",
+      "description": "Spikes reveal UE re-registrations, e.g. the automatic UE restart after a radio link failure.",
+      "gridPos": {
+        "x": 12,
+        "y": 30,
+        "w": 12,
+        "h": 8
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "custom": {
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "calcs": [
+            "mean",
+            "max"
+          ]
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "expr": "increase(fivegs_amffunction_rm_reginitreq[1m])",
+          "legendFormat": "initial registration requests (AMF)",
+          "refId": "A"
+        },
+        {
+          "expr": "increase(fivegs_amffunction_rm_reginitsucc[1m])",
+          "legendFormat": "initial registrations accepted (AMF)",
+          "refId": "B"
+        },
+        {
+          "expr": "increase(fivegs_upffunction_sm_n4sessionestabreq[1m])",
+          "legendFormat": "N4 session establishments (UPF)",
+          "refId": "C"
+        }
+      ]
+    }
+  ]
+}
