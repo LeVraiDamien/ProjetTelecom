@@ -1,8 +1,6 @@
-# Damien Guffon — Coursework Projects (Esisar)
+# Project 1 — Network Deployment, Measurement, and Observability
 
-This repository contains coursework projects.
+Damien Guffon
 
-## Projects
-
-- [Projet1/](Projet1/) — Network Deployment, Measurement, and Observability (Scenario A)
-- [Projet2/](Projet2/) — Scenario B: 5G Standalone network (Open5GS + UERANSIM), measurement and observability
+- [ScenarioA/](ScenarioA/) — Scenario A: Linux network namespaces + containerised application service
+- [ScenarioB/](ScenarioB/) — Scenario B: 5G Standalone network (Open5GS + UERANSIM), measurement and observability
