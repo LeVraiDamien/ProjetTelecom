@@ -1,6 +1,3 @@
-# Project 1 — Network Deployment, Measurement, and Observability
+# Telecom Projects — Damien Guffon
 
-Damien Guffon
-
-- [ScenarioA/](ScenarioA/) — Scenario A: Linux network namespaces + containerised application service
-- [ScenarioB/](ScenarioB/) — Scenario B: 5G Standalone network (Open5GS + UERANSIM), measurement and observability
+- [Project1/](Project1/) — Network Deployment, Measurement, and Observability
