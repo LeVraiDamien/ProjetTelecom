@@ -24,7 +24,6 @@ __pycache__/
 .venv/
 venv/
 # Divers
-/docs/*.pdf
 *.swp
 .DS_Store
 Thumbs.db
@@ -36,3 +35,11 @@ CLAUDE.local.md
 .claude/
 **/.claude/
 .mcp.json
+
+# Perso : ne concerne pas le rendu (Claude, docs du sujet, éditeurs)
+/docs/
+.vscode/
+.idea/
+*.code-workspace
+notes-perso*
+TODO.local*
