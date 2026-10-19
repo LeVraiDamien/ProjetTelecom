@@ -1,0 +1,18 @@
+## 2026-10-19T16:16:49+02:00 après docker restart de l'UE
+[p2-route] route 10.20.6.0/24 dev uesimtun0 installée
+10.20.6.20 dev uesimtun0 src 10.45.0.5 uid 0 
+    cache 
+HTTP 200 local=10.45.0.5
+## Internet via tunnel (NAT conservé hors dn-net)
+2 packets transmitted, 2 received, 0% packet loss, time 1030ms
+rtt min/avg/max/mdev = 14.081/15.226/16.371/1.145 ms
+## État
+open5gs-and-ueransim-ues1-1	telecom-lab-ueransim:3.2.6-p2	Up 4 seconds
+scenario-b-nginx	telecom-lab-nginx:p2	Up 2 minutes
+open5gs-and-ueransim-mongo-1	mongo	Up 2 minutes
+open5gs-and-ueransim-upf-1	gradiant/open5gs:2.7.5	Up 2 minutes
+gnb1	gradiant/ueransim:3.2.6	Up 35 minutes
+open5gs-and-ueransim-smf-1	gradiant/open5gs:2.7.5	Up 2 minutes
+## Réseaux P2
+dn-net [{"Subnet":"10.20.6.0/24","Gateway":"10.20.6.1"}] internal=false [scenario-b-nginx 10.20.6.20/24] [open5gs-and-ueransim-upf-1 10.20.6.10/24] 
+app-net [{"Subnet":"10.20.8.0/24","Gateway":"10.20.8.1"}] internal=true [scenario-b-nginx 10.20.8.10/24] 

@@ -1,0 +1,24 @@
+# Scénario A : passerelle N6 (Nginx). Django et TLS seront ajoutés aux phases 1B/1C.
+
+services:
+  scenario-b-nginx:
+    image: telecom-lab-nginx:p2
+    build:
+      context: ${P2_DIR}/images/nginx
+    container_name: scenario-b-nginx
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN                # pour installer la route 10.45.0.0/16 via l'UPF
+    environment:
+      UE_SUBNET: 10.45.0.0/16
+      UPF_N6_IP: 10.20.6.10
+    networks:
+      dn-net:
+        interface_name: n6
+        ipv4_address: 10.20.6.20
+        gw_priority: 1
+      app-net:
+        interface_name: app
+        ipv4_address: 10.20.8.10
+    depends_on:
+      - upf

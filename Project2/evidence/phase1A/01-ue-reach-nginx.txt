@@ -1,0 +1,14 @@
+## 2026-10-19T16:15:20+02:00 UE: ip route get 10.20.6.20
+10.20.6.20 dev uesimtun0 src 10.45.0.2 uid 0 
+    cache 
+## UE: ping 10.20.6.20 (sans -I : la route seule choisit uesimtun0)
+PING 10.20.6.20 (10.20.6.20) 56(84) bytes of data.
+64 bytes from 10.20.6.20: icmp_seq=1 ttl=63 time=1.27 ms
+64 bytes from 10.20.6.20: icmp_seq=2 ttl=63 time=4.25 ms
+64 bytes from 10.20.6.20: icmp_seq=3 ttl=63 time=1.75 ms
+
+--- 10.20.6.20 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2054ms
+rtt min/avg/max/mdev = 1.269/2.425/4.254/1.308 ms
+## UE: curl http://10.20.6.20/ (sans --interface)
+HTTP 200 local=10.45.0.2 remote=10.20.6.20 t=0.002001s

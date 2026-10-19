@@ -1,0 +1,23 @@
+## Nginx access log (IP source vue par Nginx)
+10.45.0.2 - - [19/Oct/2026:14:15:23 +0000] "GET / HTTP/1.1" 200 896 "-" "curl/7.81.0" "-"
+
+## N3 (UPF eth0, udp/2152) : GTP-U encapsulant le trafic UE<->Nginx
+14:15:21.180859 IP 172.18.0.7.2152 > 172.18.0.9.2152: UDP, length 100
+14:15:21.181209 IP 172.18.0.9.2152 > 172.18.0.7.2152: UDP, length 100
+14:15:22.184011 IP 172.18.0.7.2152 > 172.18.0.9.2152: UDP, length 100
+14:15:22.184456 IP 172.18.0.9.2152 > 172.18.0.7.2152: UDP, length 100
+14:15:23.184179 IP 172.18.0.7.2152 > 172.18.0.9.2152: UDP, length 100
+14:15:23.184395 IP 172.18.0.9.2152 > 172.18.0.7.2152: UDP, length 100
+14:15:23.370983 IP 172.18.0.7.2152 > 172.18.0.9.2152: UDP, length 76
+14:15:23.371139 IP 172.18.0.9.2152 > 172.18.0.7.2152: UDP, length 76
+   -> paquets GTP-U capturés: 18
+
+## N6 (UPF n6) : IP source = UE 10.45.0.2 (pas de NAT)
+14:15:21.180968 ARP, Request who-has 10.20.6.20 tell 10.20.6.10, length 28
+14:15:21.180986 ARP, Reply 10.20.6.20 is-at da:3a:f3:50:eb:31, length 28
+14:15:21.180987 IP 10.45.0.2 > 10.20.6.20: ICMP echo request, id 6374, seq 1, length 64
+14:15:21.181068 IP 10.20.6.20 > 10.45.0.2: ICMP echo reply, id 6374, seq 1, length 64
+14:15:22.184312 IP 10.45.0.2 > 10.20.6.20: ICMP echo request, id 6374, seq 2, length 64
+14:15:22.184388 IP 10.20.6.20 > 10.45.0.2: ICMP echo reply, id 6374, seq 2, length 64
+14:15:23.184341 IP 10.45.0.2 > 10.20.6.20: ICMP echo request, id 6374, seq 3, length 64
+14:15:23.184369 IP 10.20.6.20 > 10.45.0.2: ICMP echo reply, id 6374, seq 3, length 64

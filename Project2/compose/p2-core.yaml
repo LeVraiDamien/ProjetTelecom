@@ -1,0 +1,43 @@
+# Ajouts Projet 2 au cœur 5G existant (surcharge de ngc.yaml + gnb1.yaml).
+# À lancer via Project2/p2-compose.sh (projet Compose open5gs-and-ueransim).
+
+services:
+  mongo:
+    # on-failure ne relance pas après un arrêt propre (code 0, ex. arrêt de WSL)
+    restart: unless-stopped
+
+  upf:
+    networks:
+      default:
+        interface_name: eth0     # upf.yaml lie PFCP/GTP-U à eth0 : il doit rester le réseau du cœur
+        gw_priority: 1           # la route par défaut reste celle du réseau du cœur
+      dn-net:
+        interface_name: n6
+        ipv4_address: 10.20.6.10
+    # Pas de NAT vers dn-net : Nginx voit l'IP réelle de l'UE. La règle est insérée (-I)
+    # avant le MASQUERADE que /entrypoint.sh ajoute (-A) quand ENABLE_NAT=true.
+    entrypoint:
+      - /bin/bash
+      - -c
+      - iptables -t nat -I POSTROUTING -s 10.45.0.0/16 -d 10.20.6.0/24 -j RETURN && exec /entrypoint.sh "$$@"
+      - upf-p2
+
+  ues1:
+    image: telecom-lab-ueransim:3.2.6-p2
+    build:
+      context: ${P2_DIR}/images/ueransim-p2
+
+networks:
+  dn-net:                        # réseau de données N6
+    name: dn-net
+    ipam:
+      config:
+        - subnet: 10.20.6.0/24
+          gateway: 10.20.6.1
+  app-net:                       # réseau applicatif interne (Nginx <-> Django), sans accès extérieur
+    name: app-net
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.20.8.0/24
+          gateway: 10.20.8.1

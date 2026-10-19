@@ -1,0 +1,73 @@
+2026-10-19T16:09:27+02:00
+## docker ps
+NAMES                                IMAGE                              STATUS
+open5gs-and-ueransim-prometheus-1    prom/prometheus                    Up 28 minutes
+open5gs-and-ueransim-grafana-1       grafana/grafana                    Up 28 minutes
+open5gs-and-ueransim-pushgateway-1   prom/pushgateway                   Up 28 minutes
+open5gs-and-ueransim-cadvisor-1      gcr.io/cadvisor/cadvisor:v0.49.1   Up 28 minutes (healthy)
+open5gs-and-ueransim-nginx-1         nginx                              Up 28 minutes
+open5gs-and-ueransim-iperf3-1        networkstatic/iperf3               Up 28 minutes
+open5gs-and-ueransim-ues1-1          gradiant/ueransim:3.2.6            Up 32 seconds
+gnb1                                 gradiant/ueransim:3.2.6            Up 28 minutes
+open5gs-and-ueransim-mongo-1         mongo                              Up 2 minutes
+open5gs-and-ueransim-webui-1         gradiant/open5gs-webui:2.7.5       Up 28 minutes
+open5gs-and-ueransim-amf-1           gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-pcf-1           gradiant/open5gs:2.7.5             Up About a minute
+open5gs-and-ueransim-upf-1           gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-scp-1           gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-nssf-1          gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-udr-1           gradiant/open5gs:2.7.5             Up About a minute
+open5gs-and-ueransim-ausf-1          gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-nrf-1           gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-bsf-1           gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-udm-1           gradiant/open5gs:2.7.5             Up 28 minutes
+open5gs-and-ueransim-smf-1           gradiant/open5gs:2.7.5             Up 28 minutes
+## docker network ls
+NETWORK ID     NAME                           DRIVER    SCOPE
+c61d402186d4   bridge                         bridge    local
+80910f92cfec   host                           host      local
+1be2da522950   none                           null      local
+71d6ab75acb2   open5gs-and-ueransim_default   bridge    local
+## IPs open5gs-and-ueransim_default
+
+gnb1 172.18.0.7/16
+open5gs-and-ueransim-amf-1 172.18.0.4/16
+open5gs-and-ueransim-ausf-1 172.18.0.3/16
+open5gs-and-ueransim-bsf-1 172.18.0.5/16
+open5gs-and-ueransim-cadvisor-1 172.18.0.12/16
+open5gs-and-ueransim-grafana-1 172.18.0.19/16
+open5gs-and-ueransim-iperf3-1 172.18.0.18/16
+open5gs-and-ueransim-mongo-1 172.18.0.20/16
+open5gs-and-ueransim-nginx-1 172.18.0.2/16
+open5gs-and-ueransim-nrf-1 172.18.0.14/16
+open5gs-and-ueransim-nssf-1 172.18.0.10/16
+open5gs-and-ueransim-pcf-1 172.18.0.22/16
+open5gs-and-ueransim-prometheus-1 172.18.0.11/16
+open5gs-and-ueransim-pushgateway-1 172.18.0.15/16
+open5gs-and-ueransim-scp-1 172.18.0.13/16
+open5gs-and-ueransim-smf-1 172.18.0.16/16
+open5gs-and-ueransim-udm-1 172.18.0.8/16
+open5gs-and-ueransim-udr-1 172.18.0.21/16
+open5gs-and-ueransim-ues1-1 172.18.0.6/16
+open5gs-and-ueransim-upf-1 172.18.0.9/16
+open5gs-and-ueransim-webui-1 172.18.0.17/16
+## UE ip addr / route
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if151       UP             172.18.0.6/16 
+uesimtun0        UNKNOWN        10.45.0.2/32 fe80::b4e2:167d:b7f1:f02/64 
+uesimtun1        UNKNOWN        10.45.0.3/32 fe80::5e9f:97b1:a5e:c5be/64 
+uesimtun2        UNKNOWN        10.45.0.4/32 fe80::a9ef:996b:bce:d37e/64 
+default via 172.18.0.1 dev eth0 
+172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.6 
+## UPF ip addr / route / NAT
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if12        UP             172.18.0.9/16 fe80::a860:36ff:fea5:7e1e/64 
+ogstun           UP             10.45.0.1/16 cafe::1/64 fe80::6d6f:7000:911f:3e1/64 
+default via 172.18.0.1 dev eth0 
+10.45.0.0/16 dev ogstun proto kernel scope link src 10.45.0.1 
+172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.9 
+-P POSTROUTING ACCEPT
+-A POSTROUTING -d 127.0.0.11/32 -j DOCKER_POSTROUTING
+-A POSTROUTING -s 10.45.0.0/16 ! -o ogstun -j MASQUERADE
+## UE -> P1 nginx via uesimtun0
+200
