@@ -25,7 +25,14 @@ __pycache__/
 venv/
 # Divers
 /docs/*.pdf
-.claude/settings.local.json
 *.swp
 .DS_Store
 Thumbs.db
+# Claude (fichiers locaux, jamais sur GitHub)
+CLAUDE.md
+**/CLAUDE.md
+CLAUDE.local.md
+**/CLAUDE.local.md
+.claude/
+**/.claude/
+.mcp.json
