@@ -1,0 +1,31 @@
+
+# --- Projet 2 - sécurité ---
+# Secrets : jamais sur GitHub
+.env
+*.env
+!.env.example
+secrets/
+**/secrets/
+*.key
+*.p12
+*.pfx
+ca.srl
+# Données lourdes / locales
+/iscx/
+*.pcap.gz
+**/iscx/data/
+jenkins_home/
+**/jenkins_home/
+db.sqlite3
+*.sqlite3
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Divers
+/docs/*.pdf
+.claude/settings.local.json
+*.swp
+.DS_Store
+Thumbs.db
